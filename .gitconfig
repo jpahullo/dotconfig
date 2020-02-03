@@ -1,0 +1,23 @@
+[user]
+    email = jordi.pujol@urv.cat
+    name = Jordi Pujol Ahulló
+[color]
+    status = auto
+    branch = auto
+    diff = auto
+    grep = auto
+    interactive = auto
+[alias]  
+    pending = !sh -c 'git log exp_24..test_24 | cat - | grep redmine | cut -c13-17 | uniq | sort | uniq ' -
+    lg = log --decorate --graph --oneline
+    stash-unapply = !git stash show -p | git apply -R
+[core]
+    autocrlf = input
+    #https://stackoverflow.com/questions/27059239/git-new-blank-line-at-eof
+    whitespace = -trailing-space
+[format]
+    pretty = format:%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s
+
+[merge]
+    renamelimit = 2500
+
