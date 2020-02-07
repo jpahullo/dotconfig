@@ -17,7 +17,7 @@
 	whitespace = -trailing-space
 	excludesfile = /home/jpujol/.gitignore_global
 [format]
-	pretty = format:%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s
+	pretty = format:%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset\n%w(120,4,4)%s\n\n%w(120,4,4)%b
 
 [merge]
 	renamelimit = 2500
